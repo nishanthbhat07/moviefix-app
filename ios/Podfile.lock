@@ -11,6 +11,15 @@ PODS:
     - ExpoModulesCore
   - ExpoFont (12.0.7):
     - ExpoModulesCore
+  - ExpoHead (3.5.17):
+    - ExpoModulesCore
+  - ExpoImage (1.12.12):
+    - ExpoModulesCore
+    - libavif/libdav1d
+    - SDWebImage (~> 5.19.1)
+    - SDWebImageAVIFCoder (~> 0.11.0)
+    - SDWebImageSVGCoder (~> 1.7.0)
+    - SDWebImageWebPCoder (~> 0.14.6)
   - ExpoKeepAwake (13.0.2):
     - ExpoModulesCore
   - ExpoModulesCore (1.12.18):
@@ -36,12 +45,51 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - EXSplashScreen (0.27.5):
+    - DoubleConversion
+    - ExpoModulesCore
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - FBLazyVector (0.74.2)
   - fmt (9.1.0)
   - glog (0.3.5)
   - hermes-engine (0.74.2):
     - hermes-engine/Pre-built (= 0.74.2)
   - hermes-engine/Pre-built (0.74.2)
+  - libavif/core (0.11.1)
+  - libavif/libdav1d (0.11.1):
+    - libavif/core
+    - libdav1d (>= 0.6.0)
+  - libdav1d (1.2.0)
+  - libwebp (1.3.2):
+    - libwebp/demux (= 1.3.2)
+    - libwebp/mux (= 1.3.2)
+    - libwebp/sharpyuv (= 1.3.2)
+    - libwebp/webp (= 1.3.2)
+  - libwebp/demux (1.3.2):
+    - libwebp/webp
+  - libwebp/mux (1.3.2):
+    - libwebp/demux
+  - libwebp/sharpyuv (1.3.2)
+  - libwebp/webp (1.3.2):
+    - libwebp/sharpyuv
   - RCT-Folly (2024.01.01.00):
     - boost
     - DoubleConversion
@@ -970,6 +1018,8 @@ PODS:
   - React-Mapbuffer (0.74.2):
     - glog
     - React-debug
+  - react-native-safe-area-context (4.10.1):
+    - React-Core
   - React-nativeconfig (0.74.2)
   - React-NativeModulesApple (0.74.2):
     - glog
@@ -1199,6 +1249,39 @@ PODS:
     - React-logger (= 0.74.2)
     - React-perflogger (= 0.74.2)
     - React-utils (= 0.74.2)
+  - RNScreens (3.31.1):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Codegen
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-RCTImage
+    - React-rendererdebug
+    - React-utils
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
+  - SDWebImageAVIFCoder (0.11.0):
+    - libavif/core (>= 0.11.0)
+    - SDWebImage (~> 5.10)
+  - SDWebImageSVGCoder (1.7.0):
+    - SDWebImage/Core (~> 5.6)
+  - SDWebImageWebPCoder (0.14.6):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.17)
   - SocketRocket (0.7.0)
   - Yoga (0.0.0)
 
@@ -1210,8 +1293,11 @@ DEPENDENCIES:
   - ExpoAsset (from `../node_modules/expo-asset/ios`)
   - ExpoFileSystem (from `../node_modules/expo-file-system/ios`)
   - ExpoFont (from `../node_modules/expo-font/ios`)
+  - ExpoHead (from `../node_modules/expo-router/ios`)
+  - ExpoImage (from `../node_modules/expo-image/ios`)
   - ExpoKeepAwake (from `../node_modules/expo-keep-awake/ios`)
   - ExpoModulesCore (from `../node_modules/expo-modules-core`)
+  - EXSplashScreen (from `../node_modules/expo-splash-screen/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
   - fmt (from `../node_modules/react-native/third-party-podspecs/fmt.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -1242,6 +1328,7 @@ DEPENDENCIES:
   - React-jsitracing (from `../node_modules/react-native/ReactCommon/hermes/executor/`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
+  - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-nativeconfig (from `../node_modules/react-native/ReactCommon`)
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
@@ -1265,10 +1352,18 @@ DEPENDENCIES:
   - React-runtimescheduler (from `../node_modules/react-native/ReactCommon/react/renderer/runtimescheduler`)
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - libavif
+    - libdav1d
+    - libwebp
+    - SDWebImage
+    - SDWebImageAVIFCoder
+    - SDWebImageSVGCoder
+    - SDWebImageWebPCoder
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1286,10 +1381,16 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-file-system/ios"
   ExpoFont:
     :path: "../node_modules/expo-font/ios"
+  ExpoHead:
+    :path: "../node_modules/expo-router/ios"
+  ExpoImage:
+    :path: "../node_modules/expo-image/ios"
   ExpoKeepAwake:
     :path: "../node_modules/expo-keep-awake/ios"
   ExpoModulesCore:
     :path: "../node_modules/expo-modules-core"
+  EXSplashScreen:
+    :path: "../node_modules/expo-splash-screen/ios"
   FBLazyVector:
     :path: "../node_modules/react-native/Libraries/FBLazyVector"
   fmt:
@@ -1347,6 +1448,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   React-Mapbuffer:
     :path: "../node_modules/react-native/ReactCommon"
+  react-native-safe-area-context:
+    :path: "../node_modules/react-native-safe-area-context"
   React-nativeconfig:
     :path: "../node_modules/react-native/ReactCommon"
   React-NativeModulesApple:
@@ -1393,6 +1496,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/utils"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNScreens:
+    :path: "../node_modules/react-native-screens"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1404,12 +1509,18 @@ SPEC CHECKSUMS:
   ExpoAsset: 323700f291684f110fb55f0d4022a3362ea9f875
   ExpoFileSystem: 80bfe850b1f9922c16905822ecbf97acd711dc51
   ExpoFont: 43b69559cef3d773db57c7ae7edd3cb0aa0dc610
+  ExpoHead: 439510c5bec19592d5a0d78860e0cb6c59e28a34
+  ExpoImage: 2ccccff1219ebc765e344f3338f2430af2df4824
   ExpoKeepAwake: 3b8815d9dd1d419ee474df004021c69fdd316d08
   ExpoModulesCore: 30e1ed4659356cb9a84e0e5ddf1d090d735973c1
+  EXSplashScreen: fbf0ec78e9cee911df188bf17b4fe51d15a84b87
   FBLazyVector: 4bc164e5b5e6cfc288d2b5ff28643ea15fa1a589
   fmt: 4c2741a687cc09f0634a2e2c72a838b99f1ff120
   glog: fdfdfe5479092de0c4bdbebedd9056951f092c4f
   hermes-engine: 01d3e052018c2a13937aca1860fbedbccd4a41b7
+  libavif: 84bbb62fb232c3018d6f1bab79beea87e35de7b7
+  libdav1d: 23581a4d8ec811ff171ed5e2e05cd27bad64c39f
+  libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
   RCT-Folly: 02617c592a293bd6d418e0a88ff4ee1f88329b47
   RCTDeprecation: b03c35057846b685b3ccadc9bfe43e349989cdb2
   RCTRequired: 194626909cfa8d39ca6663138c417bc6c431648c
@@ -1434,6 +1545,7 @@ SPEC CHECKSUMS:
   React-jsitracing: 0fa7f78d8fdda794667cb2e6f19c874c1cf31d7e
   React-logger: 29fa3e048f5f67fe396bc08af7606426d9bd7b5d
   React-Mapbuffer: bf56147c9775491e53122a94c423ac201417e326
+  react-native-safe-area-context: dcab599c527c2d7de2d76507a523d20a0b83823d
   React-nativeconfig: 9f223cd321823afdecf59ed00861ab2d69ee0fc1
   React-NativeModulesApple: ff7efaff7098639db5631236cfd91d60abff04c0
   React-perflogger: 32ed45d9cee02cf6639acae34251590dccd30994
@@ -1457,6 +1569,11 @@ SPEC CHECKSUMS:
   React-runtimescheduler: 56b642bf605ba5afa500d35790928fc1d51565ad
   React-utils: 4476b7fcbbd95cfd002f3e778616155241d86e31
   ReactCommon: ecad995f26e0d1e24061f60f4e5d74782f003f12
+  RNScreens: b32a9ff15bea7fcdbe5dff6477bc503f792b1208
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
+  SDWebImageAVIFCoder: 00310d246aab3232ce77f1d8f0076f8c4b021d90
+  SDWebImageSVGCoder: 15a300a97ec1c8ac958f009c02220ac0402e936c
+  SDWebImageWebPCoder: e38c0a70396191361d60c092933e22c20d5b1380
   SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
   Yoga: 2f71ecf38d934aecb366e686278102a51679c308
 

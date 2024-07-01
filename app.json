@@ -2,7 +2,11 @@
   "expo": {
     "name": "movies_app",
     "slug": "movies_app",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "plugins": [
+      "expo-router"
+    ],
+    "scheme":"moviesapp"
   },
   "name": "movies_app"
 }
