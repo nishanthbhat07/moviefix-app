@@ -7,7 +7,7 @@ import colors from "../src/constants/colors";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.transparent,
+    backgroundColor: colors.shark,
     flex: 1,
   },
 });
