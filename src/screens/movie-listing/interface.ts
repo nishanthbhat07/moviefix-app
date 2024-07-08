@@ -1,5 +1,5 @@
 export interface IMoviesListingAPIArgs {
   year: string;
-  page: string;
+  page: number;
   genre?: string;
 }

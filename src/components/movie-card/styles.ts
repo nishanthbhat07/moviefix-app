@@ -21,8 +21,8 @@ export default StyleSheet.create({
   },
   title: {
     color: colors.white,
+    fontFamily: "bold",
     fontSize: 12,
-    fontWeight: "bold",
     paddingHorizontal: 10,
   },
 });

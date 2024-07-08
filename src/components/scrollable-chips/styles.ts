@@ -13,6 +13,7 @@ export default StyleSheet.create({
   },
   chipText: {
     color: colors.white,
+    fontFamily: "regular",
     fontSize: 14,
   },
   container: {

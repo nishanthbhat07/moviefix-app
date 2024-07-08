@@ -1,18 +1,17 @@
 import { View, Text, StyleSheet } from "react-native";
-import React from "react";
-import { Image } from "expo-image";
+import React, { memo } from "react";
+import { ImageBackground } from "expo-image";
 import styles from "./styles";
 import { IMovieCard } from "./interface";
 
 const MovieCard: React.FC<IMovieCard> = ({ item }) => {
   return (
-    <Image
-      contentFit="cover"
+    <ImageBackground
+      contentFit="contain"
       style={styles.posterImg}
-      source={{
-        uri: `https://image.tmdb.org/t/p/original/${item.poster_path}`,
-      }}
-      blurRadius={5}
+      source={`https://image.tmdb.org/t/p/original/${item.poster_path}`}
+      // blurRadius={5}
+      transition={800}
     >
       <View style={[StyleSheet.absoluteFillObject, styles.container]}>
         <Text numberOfLines={1} style={styles.title}>
@@ -20,8 +19,8 @@ const MovieCard: React.FC<IMovieCard> = ({ item }) => {
         </Text>
         <Text style={styles.title}>{Number(item.vote_average).toFixed(2)}</Text>
       </View>
-    </Image>
+    </ImageBackground>
   );
 };
 
-export default MovieCard;
+export default memo(MovieCard);

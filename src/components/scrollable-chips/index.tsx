@@ -7,7 +7,7 @@ import Separator from "./separator";
 const ScrollableChips: React.FC<{
   scrollChipsData: IScrollableChipItem[];
   onPress: (id: number) => void;
-  selectedChip: number;
+  selectedChip: number[];
 }> = ({ scrollChipsData, onPress, selectedChip }) => {
   return (
     <View style={styles.container}>
@@ -25,7 +25,7 @@ const ScrollableChips: React.FC<{
             activeOpacity={0.65}
             style={[
               styles.chip,
-              selectedChip === item.id && styles.chipSelected,
+              selectedChip.includes(item.id) && styles.chipSelected,
             ]}
           >
             <Text style={styles.chipText}>{item.name}</Text>
