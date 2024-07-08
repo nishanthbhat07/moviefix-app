@@ -41,11 +41,9 @@
 2. Pagination is done on year (primary_release_year) and not on page parameter which is provided in API request params.
 
 ## Demo
-![](demo.mov)
-<figure class="video_container">
-  <iframe src="demo.mov" frameborder="0" allowfullscreen="true"> 
-</iframe>
-</figure>
+![App Demo](demo.mov)
+
+Please download the demo.mov to see the demo video
 
 
 ## Snapshots
