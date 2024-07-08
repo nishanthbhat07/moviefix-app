@@ -42,6 +42,10 @@
 
 ## Demo
 ![](demo.mov)
+<figure class="video_container">
+  <iframe src="demo.mov" frameborder="0" allowfullscreen="true"> 
+</iframe>
+</figure>
 
 
 ## Snapshots
