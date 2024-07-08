@@ -41,10 +41,8 @@
 2. Pagination is done on year (primary_release_year) and not on page parameter which is provided in API request params.
 
 ## Demo
-[App Demo](demo.mov)
-<video width="320" height="240" controls>
-  <source src="demo.mov" type="video/mp4">
-</video>
+![](demo.mov)
+
 
 ## Snapshots
-[App](app.png)
+![](app.png)
