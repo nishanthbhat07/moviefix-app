@@ -41,7 +41,7 @@
 2. Pagination is done on year (primary_release_year) and not on page parameter which is provided in API request params.
 
 ## Demo
-[![Watch the video](https://raw.githubusercontent.com/nishanthbhat07/moviefix-app/main/app.png))](https://raw.githubusercontent.com/nishanthbhat07/moviefix-app/main/demo.mov)
+[App Demo](demo.mov)
 
 ## Snapshots
 [App](app.png)
