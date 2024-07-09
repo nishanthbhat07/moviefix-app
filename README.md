@@ -3,7 +3,7 @@
 
 
 ## Setup
-1. he project is built using YARN package manager
+1. The project is built using YARN package manager
 2. Node js Version - 18 and above
 3. Built using expo with latest react native version (0.74)
 4. Clone the repo `git clone https://github.com/nishanthbhat07/moviefix-app.git`
@@ -11,9 +11,9 @@
 
 ###  IOS
 1. Once node_modules are installed, we need to install all the pods related to the project. For doing this you can do either of the following:
-	a. npx pod-install
-	b. `cd ios && pod install && cd..`
-2. After installing pods, run the following command to make an IOS build on simulator: `yarn ios`. And also open a new terminal to start the metro server `yarn start`
+	- `npx pod-install`
+	- `cd ios && pod install && cd..`
+3. After installing pods, run the following command to make an IOS build on simulator: `yarn ios`. And also open a new terminal to start the metro server `yarn start`
 
 ## Android
 1. For build android build, use the following command: `yarn android`. And also open a new terminal to start the metro server `yarn start`
@@ -24,16 +24,21 @@
 - Expo Router - for Screen routing
 - React Query -  For API calls and pagination
 - Typescript
-- Fonts used - Inter
+- Expo Font for integrating Inter font
+- Axios -  for api request
+- DayJS - For handling of dates in JS
+- Eslint Configured.
 
 ## Features included
 1. Pagination of data for fetching movies
 2. Fetch movies by genre
 3. Multiple select genres
 4. Smoothly scroll upwards and downwards
+5. Splash Screen (IOS only)
 
 ## Features not includes
 1. Search movie functionality
+2. Splash Screen for Android
 
 
 ## Assumptions
